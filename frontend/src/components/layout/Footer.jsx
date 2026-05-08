@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { BrainCircuit, Twitter, Github, Linkedin } from 'lucide-react';
+import { BrainCircuit} from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -27,15 +27,7 @@ export default function Footer() {
         <div>
           <h4 className="font-semibold text-brand-secondary mb-4">Connect</h4>
           <div className="flex gap-4">
-            <a href="#" className="text-brand-light/70 hover:text-brand-accent transition-colors">
-              <Twitter className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-brand-light/70 hover:text-brand-accent transition-colors">
-              <Github className="w-5 h-5" />
-            </a>
-            <a href="#" className="text-brand-light/70 hover:text-brand-accent transition-colors">
-              <Linkedin className="w-5 h-5" />
-            </a>
+            
           </div>
         </div>
       </div>
