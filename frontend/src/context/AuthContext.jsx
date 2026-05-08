@@ -21,8 +21,7 @@ export const AuthProvider = ({ children }) => {
     try {
       setLoading(true);
       const config = { headers: { 'Content-Type': 'application/json' } };
-      const { data } = await axios.post('/api/auth/login', { email, password }, config);
-      setUser(data);
+      const { data } = await axios.post('http://localhost:5000/api/auth/login', { email, password }, config);
       localStorage.setItem('userInfo', JSON.stringify(data));
       setError(null);
     } catch (err) {
@@ -37,7 +36,7 @@ export const AuthProvider = ({ children }) => {
     try {
       setLoading(true);
       const config = { headers: { 'Content-Type': 'application/json' } };
-      const { data } = await axios.post('/api/auth/register', { name, email, password }, config);
+      const { data } = await axios.post('http://localhost:5000/api/auth/register', { name, email, password }, config);
       setUser(data);
       localStorage.setItem('userInfo', JSON.stringify(data));
       setError(null);
@@ -59,6 +58,7 @@ export const AuthProvider = ({ children }) => {
       {children}
     </AuthContext.Provider>
   );
+
 };
 
 export default AuthContext;
