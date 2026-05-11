@@ -133,18 +133,6 @@ npm run dev
 
 The app will run at `http://localhost:5173`
 
----
-
-## Environment Variables
-
-| Variable | Description |
-|---|---|
-| `PORT` | Backend server port (default 3000) |
-| `MONGO_URI` | MongoDB connection string |
-| `JWT_SECRET` | Secret key for JWT token signing |
-| `GROQ_API_KEY` | API key from console.groq.com |
-
----
 
 ## AI Model Details
 
